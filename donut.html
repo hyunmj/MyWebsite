@@ -3,20 +3,58 @@
 <html>
 <head>
   <title>HTML 공부하기~</title>
+  <style>
+
+    #active {
+      text-decoration: underline;
+    }
+
+    a {
+      color:green;
+      text-decoration:none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px gray solid;
+      margin:0;
+      padding:30px;
+    }
+    h2 {
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:10px;
+    }
+    ol {
+      border-right:1px solid gray;
+      width:150px;
+      margin:0;
+      padding:20px;
+      padding-left:30px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 225px 1fr;
+    }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <h2>공부 열심히~ㅎㅎㅎㅎ</h2>
-  <ol>
-    <li><a href="donut.html">도넛사진보러가기</a></li>
-    <li><a href="amoomal.html">아무말</a></li>
-    <li><a href="eng.html">영어</a></li>
-  </ol>
-  <a href="https://opentutorials.org/course/3084/18418"target="_blank" title="생활코딩">여기를 클릭</a>
-  <p>
-    <img src=donut.png><br>
-    <img src=donut2.png>
-  </p>
+  <h1><a href="index.html"style='text-decoration:none;color:blue'>WEB</a></h1>
+  <h2>공부 열심히~ㅎㅎㅎㅎ (<a href="https://opentutorials.org/course/3084/18418"target="_blank" title="생활코딩">여기를 클릭</a>)</h2>
+  <div id='grid'>
+    <ol>
+      <li><a href="donut.html" id='active'>도넛사진보러가기</a></li>
+      <li><a href="amoomal.html">아무말</a></li>
+      <li><a href="eng.html">영어</a></li>
+    </ol>
+    <div>
+      <p>
+        <img src=donut.png><br>
+        <img src=donut2.png>
+      </p>
+    </div>
+  </div>
+
 
 </body>
 </html>
